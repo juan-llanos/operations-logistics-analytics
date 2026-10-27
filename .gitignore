@@ -1,0 +1,29 @@
+# Credentials
+.env
+
+# Data and checkpoints (downloaded by the notebooks)
+notebooks/checkpoints/
+data/raw/
+data/processed/
+
+# Jupyter and Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS and editor
+Thumbs.db
+.DS_Store
+.vscode/
+
+# Google Drive shortcuts
+*.gdoc
+*.gsheet
+
+desktop.ini
+.venv/
+
+# Audit and working files (not part of the project)
+audit/
+estructura_proyecto.txt
+inventario_archivos.csv
