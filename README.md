@@ -178,7 +178,7 @@ Python (pandas, requests, SQLAlchemy, psycopg2, DuckDB, matplotlib) · PostgreSQ
 
 ## License
 
-Code under the MIT License (see `LICENSE`). The flight data comes from the U.S. Bureau of Transportation Statistics and the freight data from Colombia's open-data portal (datos.gov.co, Ministerio de Transporte, resource `tfrd-amb4`). The raw files aren't in the repository; the notebooks download both from their public sources. The one exception is `dashboard/flight_operations.pbix`, which embeds the imported BTS tables. BTS data is published by a U.S. federal agency and isn't subject to copyright in the United States. For the RNDC data, see the terms on the dataset's page at datos.gov.co.
+Code under the MIT License (see `LICENSE`). The flight data comes from the U.S. Bureau of Transportation Statistics and the freight data from Colombia's open-data portal (datos.gov.co, Ministerio de Transporte, resource `tfrd-amb4`). The raw files aren't in the repository; the notebooks download both from their public sources. The one exception is `dashboard/flight_operations.pbix`, which embeds the imported BTS tables. BTS data is published by a U.S. federal agency and isn't subject to copyright in the United States. The RNDC data is published by the Ministerio de Transporte on datos.gov.co under a Creative Commons Attribution-ShareAlike (CC BY-SA) license; the excerpts and derived tables shown in Notebook 05 are shared under the same terms.
 
 ---
 
