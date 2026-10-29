@@ -121,14 +121,18 @@ Notebooks 01–04 form the BTS pipeline. Notebook 05 is a separate branch with i
 
 ## How to reproduce
 
-**Requirements:** Python 3.12, PostgreSQL 15+, a notebook front end (`requirements.txt` includes JupyterLab; I used VS Code with the Jupyter extension), and optionally Power BI Desktop, whose PostgreSQL connector needs no extra driver.
+**Requirements:** Python 3.12, [Anaconda](https://www.anaconda.com/) or Miniconda, PostgreSQL 15+, a notebook front end (`requirements.txt` includes JupyterLab; I used VS Code with the Jupyter extension), and optionally Power BI Desktop, whose PostgreSQL connector needs no extra driver.
 
-1. Clone the repository and install dependencies:
+1. Clone the repository, create the environment and install dependencies:
    ```bash
+   git clone https://github.com/juan-llanos/operations-logistics-analytics.git
+   cd operations-logistics-analytics
+   conda create -n logistics_analytics_env python=3.12 -y
+   conda activate logistics_analytics_env
    pip install -r requirements.txt
    ```
 2. Create an empty database called `bts_flights_db` in PostgreSQL (I created it manually in pgAdmin).
-3. Copy `.env.example` to `.env` in the project root and fill in your credentials:
+3. Copy `.env.example` to `.env` in the project root (Windows: `copy .env.example .env`) and fill in your credentials:
    ```
    DB_USER=postgres
    DB_PASSWORD=
